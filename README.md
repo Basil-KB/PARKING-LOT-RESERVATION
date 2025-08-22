@@ -44,7 +44,8 @@ This project implements a Parking Lot Reservation system featuring:
 
 ## Setup Instructions
 
-1. **Clone the repository**                                                                                              git clone https://github.com/Basil-KB/PARKING-LOT-RESERVATION.git
+1. **Clone the repository**
+    git clone https://github.com/Basil-KB/PARKING-LOT-RESERVATION.git
 cd PARKING-LOT-RESERVATION
 2. **Create Database**
          Set up a MySQL database named `parking_lot`:
@@ -58,9 +59,9 @@ cd PARKING-LOT-RESERVATION
 The application runs at `http://localhost:8080`. However, the root URL (`/`) does **not** serve a static homepage or web interface by default since this is a backend REST API application.
 
 ---
-## API Documentation & Explore the API
+##Explore the API & API Documentation  
 
-Swagger UI documentation is available at:http://localhost:8080/swagger-ui/index.html
+5.Swagger UI documentation is available at:http://localhost:8080/swagger-ui/index.html
 Use it to explore and test API endpoints interactively.
 
 ---
