@@ -51,10 +51,12 @@ cd PARKING-LOT-RESERVATION
          Set up a MySQL database named `parking_lot`:
 3. **Configure application.properties**
         Modify `src/main/resources/application.properties` as per your database credentials
+
 4.**Build the Project**
 5. **Run the Application**
       The application will start at: `http://localhost:8080`
-  ## Accessing the Application : The application runs at `http://localhost:8080`. However, the root URL (`/`) does **not** serve a static homepage or web interface by default since this is a backend REST API application.
+  ## Accessing the Application 
+The application runs at `http://localhost:8080`. However, the root URL (`/`) does **not** serve a static homepage or web interface by default since this is a backend REST API application.
 
 ---
 ##Explore the API & API Documentation  
