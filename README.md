@@ -50,7 +50,7 @@ cd PARKING-LOT-RESERVATION
 2. **Create Database**
          Set up a MySQL database named `parking_lot`:
 3. **Configure application.properties**
-        Modify `src/main/resources/application.properties` as per your database credentials.
+        Modify `src/main/resources/application.properties` as per your database credentials
 
 4.**Build the Project**
 5. **Run the Application**
