@@ -67,27 +67,27 @@ Use it to explore and test API endpoints interactively.
 ---
 ## API Usage
 
-- Floor APIs  
+Floor APIs  
 - Create: `POST /api/floors`  
 - Retrieve: `GET /api/floors/{id}`  
 - Update: `PUT /api/floors/{id}`
 
-- Slot APIs  
+Slot APIs  
 - Create: `POST /api/slots?floorId={floorId}`  
 - Retrieve: `GET /api/slots/{id}`  
 - Update: `PUT /api/slots/{id}`
 
-- Vehicle Rate APIs  
+Vehicle Rate APIs  
 - Create: `POST /api/vehicle-rates`  
 - Update: `PUT /api/vehicle-rates/{id}`
 
-- Reservation APIs  
+Reservation APIs  
 - Reserve slot: `POST /api/reserve`  
 - Get reservation: `GET /api/reservations/{id}`  
 - Cancel reservation: `DELETE /api/reservations/{id}`  
 - Reschedule reservation: `PUT /api/reservations/{id}/`
 
-- Availability API  
+Availability API  
 - Get available slots: `GET /api/availability/`
 
 ---
