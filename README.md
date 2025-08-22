@@ -44,7 +44,7 @@ This project implements a Parking Lot Reservation system featuring:
 
 ## Setup Instructions
 
-1. **Clone the repository**
+1. **Clone the repository**::
     git clone https://github.com/Basil-KB/PARKING-LOT-RESERVATION.git
 cd PARKING-LOT-RESERVATION
 2. **Create Database**
