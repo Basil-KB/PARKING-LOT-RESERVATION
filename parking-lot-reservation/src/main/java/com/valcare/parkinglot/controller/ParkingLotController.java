@@ -1,7 +1,12 @@
 package com.valcare.parkinglot.controller;
 
 import java.time.LocalDateTime;
+
+import com.infisical.sdk.util.InfisicalException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Profile;
+import org.springframework.core.env.Environment;
 import org.springframework.data.domain.Page;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.HttpStatus;
@@ -15,7 +20,9 @@ import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 
+
 @RestController
+
 @RequestMapping("/api")
 @Tag(name = "Parking Lot Reservation API", description = "Manage floors, slots, reservations")
 public class ParkingLotController {
@@ -29,13 +36,27 @@ public class ParkingLotController {
 	private SlotService slotService;
 	@Autowired
 	private VehicleRateService vehicleRateService;
-	
-	
+
+    @Autowired
+    private Environment env;
+
+
+
+    @GetMapping("/infisical")
+    @Operation(summary = "Get Infisical details")
+    public void getInfisical() throws InfisicalException {
+        //InfisicalController.printData();
+    }
+
 	// --- Floor APIs ---
     @PostMapping("/floors")
     @Operation(summary = "Create a parking floor")
     public Floor createFloor(@Valid @RequestBody Floor floor) {
-    	return floorService.createFloor(floor);
+        System.out.println("spring.datasource.url="+env.getProperty("spring.datasource.url"));
+        System.out.println("spring.datasource.username="+env.getProperty("spring.datasource.username"));
+        System.out.println("spring.datasource.password="+env.getProperty("spring.datasource.password"));
+        return floorService.createFloor(floor);
+
     }
     @GetMapping("/floors/{id}")
     @Operation(summary = "Get floor details by ID")

@@ -1,5 +1,0 @@
-# Created at 2025-08-20T17:10:00.633
-Boot Manifest-JAR contains absolute paths in classpath 'D:\Valcare-JDK17-STS4-SPRINGBOOT-Parking-Lot-Reservation\parking-lot-reservation\target\test-classes'
-Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
-'other' has different root
-

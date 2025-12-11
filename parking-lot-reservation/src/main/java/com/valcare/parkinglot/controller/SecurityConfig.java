@@ -1,3 +1,4 @@
+/*
 package com.valcare.parkinglot.controller;
 
 import org.springframework.context.annotation.Bean;
@@ -15,4 +16,4 @@ public class SecurityConfig {
 	        .authorizeHttpRequests(auth -> auth.anyRequest().permitAll());
 	        return http.build();
 	    }
-	}
+	}*/
